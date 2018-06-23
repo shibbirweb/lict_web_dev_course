@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<title>Javascript Practice</title>
+		<script type="text/javascript" src="Jquery/jquery.min.js"></script>
+		<!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script> -->
+		<style type="text/css">
+			#divforhide{
+				width: 500px;
+				height: 200px;
+				border: 2px solid blue;p
+			}
+			#divforshow22{
+				display:none;
+			}
+			#btn_show{
+			display:none;
+			}
+			#btn_hide{
+			}
+		</style>
+	</head>
+	<body style="width:90%; margin:0 auto; padding-bottom:20px;">
+			<h3 style="text-align:center;">Basic Javascript</h3>
+
+			
+			
+			
+			
+				<script>
+					<!-- function amadertext(){ -->
+						<!-- var result = document.formName.full_name.value; -->
+						<!-- document.getElementById('userdata').innerHTML = result; -->
+					<!-- } -->
+					//Code for radio button/ Gender
+					/*function amaderRadio(){
+						var genderLength = document.formName.gender.length;
+						for(i=0; i<genderLength; i++ ){
+							var checkedVal = document.formName.gender[i].checked;
+							
+							if(checkedVal){
+								var result = document.formName.gender.value;
+							}
+						}
+					document.getElementById('userdata').innerHTML = result;
+					}*/
+					function amaderHobbies(){
+						var genderLength = document.formName.hobbies.length;
+						var result = "";
+						for(i=0; i<genderLength; i++ ){
+							var checkedVal = document.formName.hobbies[i].checked;
+							
+							if(checkedVal){
+								result += document.formName.hobbies[i].value+" ";
+							}
+						}
+					document.getElementById('userdata').innerHTML = result;
+					}
+				</script>
+				<div id="userdata" class="user_style">
+					
+				</div>
+				<div>
+					<form name="formName" onsubmit="amaderHobbies(); return false">
+						<fieldset>
+							<legend> Our Javascript</legend>
+							<!-- <p> -->
+								<!-- <label for="f_name">Full Name: </label> -->
+								<!-- <input type="text" name="full_name" id="f_name" placeholder="Type here..." /> -->
+							<!-- </p> -->
+							<!-- <p> -->
+								<!-- <label>Gender: </label> -->
+								<!-- <input type="radio" name="gender" value="Male" /> -->
+								<!-- Male -->
+								<!-- <input type="radio" name="gender" value="Female" /> -->
+								<!-- Female -->
+								<!-- <input type="radio" name="gender" value="Other" /> -->
+								<!-- Other -->
+							<!-- </p> -->
+							<p>
+								<label>Coding: </label>
+								<input type="checkbox" name="hobbies" value="PHP" />
+								PHP
+								<input type="checkbox" name="hobbies" value="Javascript" />
+								Javascript
+								<input type="checkbox" name="hobbies" value="Java" />
+								Java
+								<input type="checkbox" name="hobbies" value="Python" />
+								Python
+							</p>
+							<input type="submit" value="Send" />
+							<input type="reset" value="Clear" />
+						</fieldset>
+
+					</form>
+				</div>
+				<script type="text/javascript">
+					function amarInput(){
+						var a = document.formname.f_name.value;
+						document.getElementById('this').innerHTML = a;
+					}
+				</script>
+				<div>
+					<fieldset>
+						<legend>Text innerHTML</legend>
+						<form name="formname" onsubmit="amarInput(); return false" autocomplete="off">
+							<label for="f_name">Full Name:</label>
+							<input type="text" name="f_name" id="f_name" value="" placeholder="Type your text..." />
+							<input type="submit" value="Send" />
+							<input type="reset" value="Clear"/>
+						</form>
+						<div id="this"></div>
+					</fieldset>
+				</div>
+				<!-- Jquery Start -->
+
+				
+<!--  				<div class="jquery_style">
+					<p class="for_hide">This is a paragraph, should be hidden by click</p>
+				
+				<script type="text/javascript">
+				$(document).ready(function(){
+					$('#aaa').click(function(){
+						$(".for_hide").fadeOut("20000");
+					});
+				});
+					
+					
+				</script>
+				<button id="aaa">click to hide paragraph</button>
+				</div>
+
+				<div id="divforhide">
+					<fieldset>
+						<legend>This div for hide..</legend>
+						<p>Bla bla bla...</p>
+					</fieldset>
+				</div>
+				<div id="divforshow22">
+					<fieldset>
+						<legend>This hidden text..</legend>
+						<p>Bla bla bla...</p>
+					</fieldset>
+				</div>
+				
+				<div class="practice">
+				<script type="text/javascript">
+					$(document).ready(function(){
+						$('#bbb').click(function(){
+							$("#divforhide").hide("");
+						});
+					});
+					$(document).ready(function(){
+						$('#ccc').click(function(){
+							$("#divforshow22").show("");
+						});
+					});
+				</script>
+				<button id="bbb">Hide a div</button>
+				<button id="ccc">Show hided div</button>
+					
+				</div> -->
+				
+				<div id="showhide">
+					<p id="hidepara">This paragraph for hide and show</p>
+					<script>
+						$(document).ready(function(){
+						$('#btn_hide').click(function(){
+							$("#hidepara").hide();
+							$("#btn_show").show();
+							$("#btn_hide").hide();
+						});
+						$('btn_show').click(function(){
+							$("#hidepara").show();
+							$("#btn_hide").show();
+							$("#btn_show").hide();
+						});
+					});
+				</script>
+				<button id="btn_hide">Hide</button>
+				<button id="btn_show">Show</button>
+				</div>
+
+			
+	</body>
+</html>

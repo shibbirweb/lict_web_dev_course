@@ -1,0 +1,109 @@
+<!DOCTYPE HTML>
+<html lang="en-US">
+	<head>
+	<meta charset="UTF-8">
+	<title>Basic JavaScript</title>
+	<link rel="stylesheet" href="style.css" />
+	<script type="text/javascript" src="javascript.js"></script>
+	
+	</head>
+		<body>
+
+		<p><input type="button" value="Delete" onclick="amaderAlert()" /></p>
+		
+		<script>
+			function myAlert(){
+				alert("Loading this message!");
+			}
+			
+		</script>
+		<script type="text/javascript">
+			document.write("<h3>Our text by JavaScript</h3>");
+			function welcomeAlert(){
+				alert ("This is an alert!");
+			}
+			
+			function amaderConfirmBox(){
+				var conf = confirm("Click Ok to accept and Cancel to deny!");
+				if (conf==true){
+					document.write("Thanks for accepting");
+				}else{
+					document.write("Better Luck next time!");
+				}
+			}
+			function amaderPrompBox(){
+				var prom = prompt("Type Your Name", "Josheph");
+				
+				if (prom!= null){
+					document.write("Welcome " +  prom);
+				}
+			}
+		</script>
+		<div>
+			<form action="">
+				<fieldset>
+					<legend>Our JavaScript</legend>
+					<p>
+						<label>Full name: </label>
+						<input />
+					</p>
+						<input type="button" value="Click Here" onclick="welcomeAlert()" />
+				</fieldset>			
+			</form>
+			<p>
+				<input type="button" value="Click Here" onclick="amaderConfirmBox()" />
+			</p>
+			<p>
+				<input type="button" value="Prompt Box" onclick="amaderPrompBox()" />
+			</p>
+			
+			<p>
+				<input type="text" value="How are you?" id="data" />
+				<input type="text" value="" id="blank"/>
+			</p>
+			<button onclick="document.getElementById('blank').value = document.getElementById('data').value" >Click to copy the text</button>
+		</div>
+		
+		<form action="">
+			<fieldset>
+				<legend>JavaScript</legend>
+				<p><input type="button" value="Alert" onclick="" /></p>
+			</fieldset>
+		</form>
+		<script>
+			var i =1;
+			while(i<=10){
+				document.write("The number is: " + i);
+				document.write("<br/>");
+				i++;
+			}
+			document.write("<br />" + "<hr />");
+			
+			var i = 1;
+			do {
+				document.write("The number is: " + i);
+				document.write("<br />");
+				i++;
+			}
+			while(i<=10);
+		</script>
+		
+		<div id="user_data">
+			<h1>The  sample text</h1>
+		</div>
+		
+		<div id="changing_text">
+			<h1>The World !</h1>
+		</div>
+		<script>
+			//document.getElementById("changing_text").innerHTML  = "The Bangledesh is our country";
+			
+			function changeColor(){
+				document.getElementById('user_data').style.color = "red";
+				//document.body.style.color = "red";
+				document.getElementById('user_data').style.fontFamily = "Comic Sans Ms";
+			}
+		</script>
+		<input type="button" value="Change color or Font Size" onclick="changeColor()" />
+	</body>
+</html>

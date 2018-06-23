@@ -1,0 +1,80 @@
+*{
+	outline: 0;
+}
+body {
+  color: #000;
+  font-family: Tahoma;
+  font-size: 15px;
+  line-height: 15px;
+}
+.full_container{
+	width: 800px;
+	background-color: #AEAEAE;
+	margin: 2px auto;
+}
+
+.header_area{
+	height: 60px;
+	background-color: #E0B0C0;
+	
+}
+.header_area h3 {
+  font-size: 25px;
+  margin: 0;
+  padding: 20px 0;
+  text-align: center;
+}
+.menu_area{
+	height: 29px;
+	background-color: #E0E0E0;
+	
+}
+.menu_area ul {
+  list-style: outside none none;
+  padding: 0;
+}
+.menu_area ul li{float: left}
+.menu_area ul a{
+	text-decoration: none;
+	display: block;
+	background-color: #000;
+	color: #fff;
+	padding: 7px 15px;
+	border-right: 2px solid red;
+}
+.menu_area ul a:hover{
+	background-color: #fff;
+	color: red;
+}
+.menu_area ul li:last-child > a{
+	border: none;
+}
+#active{
+	font-weight: 900;
+	color: red !important;
+}
+.container{
+	min-height: 600px;
+	background-color: #fff;
+	margin: 30px 5px;
+}
+.form{
+	padding: 20px;
+}
+
+.our_cont {
+	padding: 10px;
+}
+.our_cont h3 {
+	text-align: center;
+}
+.footer_area{height: 60px;
+	background-color: #E0B0C0;}
+.footer_area h3{
+	text-align: center;
+	padding: 20px 0;
+}
+input[type=text],[type=email]{
+    width: 300px;
+    background-color: rgb(255, 255, 255);
+}

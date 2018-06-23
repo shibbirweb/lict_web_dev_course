@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+	<html>
+		<head>
+		<title>JAVASCRIPT EXERCISE</title>
+		<link href="styles.css" rel="stylesheet" />
+	</head>
+	<body>
+		<div class="full_container">
+			<div class="header_area">
+				<script type="text/javascript">
+					document.write("<h3> JAVASCRIPT practising </h3>");
+				</script>
+			</div>
+			
+			<div class="menu_area">
+				<ul>
+					<li> <a href=""> Home </a> </li>
+					<li> <a href=""> Contact </a> </li>
+					<li> <a href=""> About Us </a> </li>
+				</ul>
+			</div>
+			
+			<div class="container">
+				<div class="our_cont">
+					<h3> Our code goes here....  </h3>
+					
+	<div class="form">
+		<form name="form_name" onsubmit="amaderFunction(); return false" >
+			<fieldset> 
+				<legend> Our Form with info</legend>
+				<p>
+					<label> Full Name:</label>
+					<input type="text" name="full_name" />
+				</p>
+					<input type="submit" value="Send koren" />
+					<input type="reset" value="Clear koren" />
+			</fieldset>
+		</form>
+	</div>
+	<script>
+		function amaderFunction(){
+			var user_data = document.form_name.full_name.value;
+			document.getElementById('user_data').innerHTML = user_data;
+		}
+		
+	</script>
+	<div id="user_data">
+	</div>
+					
+					<div id="changing_text">
+						<h1> dfadsfadsf .</h1>
+					</div>
+					<script>
+				
+					document.getElementById('changing_text').innerHTML = "Bangladesh is our Country!";
+					</script>
+	
+					<fieldset>
+						<legend> Value Changing..</legend>
+						<p>
+							<input type="text" name="" id="data1" value="Hello!!" />
+						</p>
+						<p>
+							<input type="text" name="" id="data2" value="" />
+						</p>
+						<input type="reset" value="Clear" />
+					</fieldset>
+					
+<button onclick="document.getElementById('data2').value = document.getElementById('data1').value "> Copy the value</button>
+			
+					
+					
+					<script type="text/javascript">
+						var manusher_nam = "Mostak";
+						var manusher_nam = "Mostafizur";
+						
+						
+						//document.write("His name is:"+ "  " + name );
+						//document.write("<br />");
+						document.write("<br />");
+						//var x = 10.05;
+						//var y = 9;
+						//var z = x+y;
+						//document.write(z);
+						//document.write("<br />");
+						
+						function myName(){
+							manusher_nam = "Aulad Hossen";
+							document.write(manusher_nam);
+						}
+						
+						document.write(manusher_nam + "<br />");
+						
+						document.write("<h3> Statements </h3>");
+						
+						var x = 7;
+						
+
+						if(x==3){
+							document.write("The number is three");
+						}else{
+							document.write("The number is 7");
+						}
+						document.write("<br />");
+						document.write("<hr />");
+						
+						for(i=0; i<=10; i++){
+							document.write("The number is: " + i);
+							document.write("<br />");
+							
+						}
+						
+						document.write("<hr />");
+						
+						var i = 0;
+						while(i <= 5){
+							document.write("Number:" + i);
+							document.write("<br />");
+							i++;
+						}
+						
+						function amarAlert(){
+							alert("Vul korte kortei shikbo!!");
+						}
+						
+						function amarConfirmation(){
+							var con = confirm("Apni ki chan?");
+							
+							if(con==true){
+								document.write("Apni Chaicen");
+							}else{
+								document.write("Apni Channai");
+							}
+						}
+						
+						
+					</script>
+					
+					<input type="button" value="Warning" onclick="amarAlert()"/>
+					<input type="button" value="Prompt" onclick="amarConfirmation()"/>
+				</div>
+				
+			</div>
+			
+			<div class="footer_area">
+				<h3> All Right Right Reserved </h3>
+			</div>
+		</div>
+	</body>
+</html>

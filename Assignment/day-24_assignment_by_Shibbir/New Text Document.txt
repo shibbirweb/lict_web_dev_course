@@ -1,0 +1,41 @@
+array_combine()
+array_merge()
+array_merge_recursive()
+
+----------
+
+array_unshift()
+array_pop()
+array_push()
+array_pad()
+
+----------
+
+array_change_key_case()
+array_key_exists()
+array_reverse()
+array_replace()
+array_sum()
+array_unique()
+sort()
+rsort()
+ksort()
+asort()
+count()
+current()
+end()
+sizeof()
+suffle()
+array_diff()
+array_udiff()
+array_diff_assoc()
+
+Assignment:
+1.Array Function (15)
+2. Form - Field (5)
+	i) First Name
+	ii) Last Name
+	iii) Email
+	iv) Gender
+	v) Phone
+Note: Index (can't be match) which  used in class
